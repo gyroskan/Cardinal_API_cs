@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `Members` (
+    `ID` INT NOT NULL AUTO_INCREMENT=0,
+    `Name` VARCHAR(40) Not NULL,
+    `GuildID` INT NOT NULL,
+    `Rank` INT DEFAULT 1,
+    FOREIGN KEY (GuildID) REFERENCES `Guilds`(ID),
+    PRIMARY KEY (ID, GuildsID)
+)
